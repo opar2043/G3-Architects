@@ -118,7 +118,8 @@ nav a{
 }
 .pic-section > img{
    width: 220px;
-   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1); */
+   border: 1px dotted rgba(0, 0, 0, 0.329);
 }
 .feature-section{
     width: 44%;
@@ -127,6 +128,135 @@ nav a{
     font-size: 2rem;
 }
 
+
+/* section-2------------------- */
+
+.section-2{
+    width: 80%;
+    margin: 30px auto;
+    display: flex;
+    padding: 25px;
+    justify-content: space-between;
+    gap: 20px;
+}
+.section-2 .big{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+}
+.section-2 .big h3{
+    border-left: 2px solid rgb(255, 144, 14);
+    padding: 6px;
+    font-size: 1.8rem;
+}
+.section-2  .small{
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.068), 0 6px 20px 0 rgba(0, 0, 0, 0.055); 
+     padding: 14px;
+     margin-top: 14px;
+     border-radius: 10px 14px;
+}
+.section-2  .small h2{
+    font-size: 1rem;
+}
+.section-2  .img2 {
+   width: 45%;
+}
+.section-2 button  {
+    width: 9rem;
+    height: 4.5rem;
+   margin-top: -70px;
+   margin-left: -30px;
+}
+.section-2  .img2 img{
+   width: 100%;
+   border: 2px dotted rgba(0, 0, 0, 0.219);
+   border-radius: 12px;
+}
+
+/* ------section 03=------------- */
+.section-3{
+    width: 80%;
+    margin: 30px auto;
+}
+.section-3 .facts{
+    width: 60%;
+    margin: 30px auto;
+    padding: 25px;
+    text-align: center;
+}
+.section-3 .facts h2{
+    font-size: 1.7rem;
+    color: rgba(0, 0, 0, 0.774);
+}
+.section-3 .sponsor{
+    width: 100%;
+    margin: 0 auto;
+    padding: 25px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.section-3 .sponsor .sponsor-icon{
+    width: 140px;
+    height: 140px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 3px;
+    border: 1px solid rgb(255, 144, 14) ;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.168), 0 6px 20px 0 rgba(0, 0, 0, 0.055); 
+}
+.section-3 .sponsor .sponsor-icon h3{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.795);
+}
+.section-3 .sponsor .sponsor-icon .img3{
+   width: 40px;
+   margin: 0 auto;
+}
+.section-3 .sponsor .sponsor-icon .img3 img{
+   width: 100%;
+}
+
+
+/* section 4--------- */
+.section-4{
+    width: 80%;
+    margin: 30px auto;
+}
+.section-4 .facts{
+    width: 50%;
+    margin: 30px auto;
+    padding: 25px;
+    text-align: center;
+}
+
+.section-4 .img4{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+.section-4 .img4 .img-icon img{
+    width: 120px;
+    height: auto;
+}
+/* -------footer---------- */
+footer{
+    padding: 25px;
+    width: 100%;
+    background-color: rgba(255, 144, 14, 0.1);
+    text-align: center;
+    margin-top: 90px;
+}
+footer span{
+   color: black;
+   font-size: 1.2rem;
+   font-weight: 600;
+}
 /* -----responsive section------- */
 
 @media only screen and (max-width: 576px) {
@@ -156,14 +286,49 @@ nav a{
     .img{
         margin-left: 30px;
     }
-    .section-1{
+    .section-1 {
         flex-direction: column;
         width: 95%;
         justify-content: center;
         box-shadow: none;
     }
-    .pic-section{
+    .pic-section {
         display: grid;
         grid-template-columns: repeat(1,1fr);
+    }
+    .section-2 {
+        flex-direction: column;
+        width: 96%;
+        margin: 0px auto;
+        justify-content: center;
+        gap: 10px;
+    }
+    .section-2 .big ,h3{
+        text-align: center;
+        width: 96%;
+    }
+    .section-2 .img2{
+        width: 96%;
+        margin: 0px auto;
+    }
+    
+    .section-2 button  {
+        width: 9rem;
+        height: 4.5rem;
+        margin-top: 0px;
+        margin-left: 0px;
+        text-align: center;
+    }
+    .section-3 .facts , .section-4 .facts{
+        width: 100%;
+        padding: 15px;
+        text-align: center;
+    }
+    .section-3 .sponsor ,.section-4 .img4{
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;  
+        justify-content: center;
+        align-items: center;
+        width: 100%;
     }
   }
